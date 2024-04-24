@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.fingerprintjs.android.fingerprint.other_info.DeviceInfoItem
 
 class MyAdapter(var items: List<DeviceInfoItem>) : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
 
@@ -33,7 +34,3 @@ class MyAdapter(var items: List<DeviceInfoItem>) : RecyclerView.Adapter<MyAdapte
 
 }
 
-data class DeviceInfoItem(
-    val title: String,
-    val detail: String
-)

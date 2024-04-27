@@ -42,5 +42,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.github.yashodharpatel:fingerprintjs-android:1.0.7")
+    implementation("com.github.yashodharpatel:fingerprintjs-android:1.0.8")
 }

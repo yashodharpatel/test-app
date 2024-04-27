@@ -7,8 +7,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.fingerprintjs.android.fingerprint.other_info.CustomUtils
-import com.fingerprintjs.android.fingerprint.other_info.DeviceInfoItem
+import com.fingerprintjs.android.fingerprint.custom_info.CustomUtils
+import com.fingerprintjs.android.fingerprint.custom_info.DeviceInfoItem
 
 class MainActivity : AppCompatActivity() {
     private lateinit var adapter: MyAdapter
@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = MyAdapter(list)
         recyclerView.adapter = adapter
+
+        // SDK
         adapter.updateItems(CustomUtils.collectDeviceInfo(this))
     }
 }
